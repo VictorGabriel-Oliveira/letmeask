@@ -20,6 +20,11 @@
         img{
             margin:8px;
         }
+        &.outlined{
+            border: 1px solid #835afd;
+            color: #835afd;
+            background-color: #fff;
+        }
 
         &:not(:disabled):hover{
             filter: brightness(0.9);
@@ -30,3 +35,4 @@
             cursor: not-allowed;
         }
 }
+

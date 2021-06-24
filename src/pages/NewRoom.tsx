@@ -19,6 +19,7 @@ export default function Home (){
     const user = useContext(AuthContext)
     const [newRoom, setNewRoom] = useState('')
 
+    
     async function handleCreateRoom(event : FormEvent){
         event.preventDefault()
         if(newRoom.trim() === ''){
@@ -34,7 +35,7 @@ export default function Home (){
             }
         )
 
-        history.push(`/rooms/${firebaseRoom.key}`)
+        history.push(`/admin/rooms/${firebaseRoom.key}`)
     }
 
     return(
